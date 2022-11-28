@@ -1,0 +1,46 @@
+<form [formGroup]="employeeForm" (ngSubmit)="onSubmit(employeeForm)">
+   <div class="alert alert-success" role="alert" *ngIf="isSuccess">
+      Data Saved Successfully!!!
+    </div>
+<div class="center">
+    <h1>Employee Details</h1>
+
+    <div class="row">
+        <div class="col-md-2">
+           First Name
+        </div>
+        <div class="col-md-8">
+            <input type="text" formControlName="firstName" id="firstName">
+         </div>
+    </div>
+    <br/>
+    <div class="row">
+        <div class="col-md-2">
+           Last Name
+        </div>
+        <div class="col-md-8">
+            <input type="text" formControlName="lastName" id="lastName">
+         </div>
+    </div>
+    <br/>
+    <div class="row">
+        <div class="col-md-2">
+           Tel
+        </div>
+        <div class="col-md-8">
+            <input type="tel" formControlName="tel"  id="tel">
+         </div>
+    </div>
+    <br/>
+    <div class="row">
+        <div class="col-md-2">
+           Email
+        </div>
+        <div class="col-md-8">
+            <input type="email" formControlName="email"  id="email">
+         </div>
+    </div>
+    <br/>
+    <button type="submit"  class="btn btn-primary" id="btnSubmit" >Submit</button>
+</div>
+</form>

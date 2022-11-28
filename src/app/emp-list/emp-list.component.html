@@ -1,0 +1,23 @@
+<div class="center">
+  <h1>List Of Employee</h1>
+  <table class="table table-bordered">
+    <thead class="thead-dark">
+        <tr>
+            <th>First Name</th>
+            <th>Last Name</th>
+            <th>Telephone</th> 
+            <th>Email</th> 
+       </tr>
+    </thead>
+   
+    <tbody>
+        <tr *ngFor="let emp of empList">
+         <td>{{emp.firstName}}</td>
+         <td>{{emp.lastName}}</td>
+         <td>{{emp.tel}}</td>
+         <td>{{emp.email}}</td>
+        </tr>
+    </tbody>
+  </table>
+
+</div>
